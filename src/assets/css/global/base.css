@@ -1,0 +1,36 @@
+/* General rules */
+html {
+  --light-violet: hsl(270, 3%, 87%);
+  --dark-violet: hsl(279, 6%, 55%);
+  --very-violet: hsl(270, 9%, 17%);
+  --red-input: hsl(0, 100%, 66%);
+  min-height: 100% !important;
+    height: 100%;
+  overflow-x: hidden;
+
+}
+
+body{
+  font-family: "Space Grotesk";
+  font-weight: 500;
+  font-size: 18px;
+  min-height: 100vh !important;
+  height: 100vh;
+}
+
+.Home{
+  display: flex;
+  flex-direction: row;
+}
+
+::placeholder{
+  font-family: "Space Grotesk";
+  font-size: 18px;
+  color: #909090e5;
+}
+
+@query screen and (max-width: 768px){
+  body{
+    height: 100vh;
+  }
+}

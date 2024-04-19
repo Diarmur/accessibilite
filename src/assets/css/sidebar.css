@@ -1,0 +1,176 @@
+.Sidebar{
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 33%;
+    transition: all 0.5s;
+    z-index: 999;
+    background-image: url(../img/bg-main-desktop.png);
+}
+
+.Cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+    margin-left: 250px;
+    gap: 20px;
+}
+
+.Front-card{
+    position: relative;
+    display: flex;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 447px;
+    height: 245px;
+}
+
+.Front-card img{
+    margin-top: 30px;
+    margin-left: 30px;
+    width: 80px;
+    height:44px;
+}
+
+.Front-card .Card-info{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    margin-left: 30px;
+    color: white;
+    width: 80%;
+}
+
+.Front-card .Card-info .Card-Number{
+    letter-spacing: 3px;
+    font-size: 25px;
+}
+
+.Front-card .Card-info .Card-Holder-Exp{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+}
+
+.Front-card .Card-info .Card-Holder-Exp .Name{
+    font-size: 15px;
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+
+.Front-card .Card-info .Card-Holder-Exp .Expiration{
+    font-size: 12px;
+}
+
+.Back-card{
+    position: relative;
+    display: flex;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 447px;
+    height: 245px;
+    margin-left: 200px;
+}
+
+.Back-card .Card-cvc{
+    position: absolute;
+    margin-top: 110px;
+    margin-left: 350px;
+    color: white;
+    letter-spacing: 2px;
+}
+
+.Error-feedback{
+    /* position: absolute; */
+    margin-top: -5px;
+    margin-bottom: -10px;
+    letter-spacing: 0px;
+    font-size: 15px;
+    color: hsl(0, 100%, 66%);
+    opacity: 0;
+}
+
+.Error-feedback.active{
+    opacity: 1;
+}
+
+@media screen and (max-width: 768px){
+    .Sidebar{
+        position: relative;
+        top: 0;
+        left: 0;
+        height: 30vh;
+        width: 110vw;
+        
+        transition: all 0.5s;
+        z-index: 999;
+        background-image: url(../img/bg-main-mobile.png);
+    }
+
+    .Cards{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 120px;
+        margin-left: 0px;
+    }
+
+    .Front-card{
+        position: relative;
+        display: flex;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 300px;
+        height: 164px;
+        margin-left: -40px;
+        z-index: 2;
+    }
+
+    .Front-card img{
+        margin-top: 20px;
+        margin-left: 20px;
+        width: 60px;
+        height:33px;
+    }
+
+    .Front-card .Card-info{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        margin-top: 70px;
+        margin-left: 20px;
+        color: white;
+        width: 80%;
+    }
+
+    .Front-card .Card-info .Card-Number{
+        font-size: 18px;
+        margin-bottom: -1px;
+    }
+
+    .Back-card{
+        position: relative;
+        display: flex;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 300px;
+        height: 164px;
+        margin-top: -275px;
+        margin-left: 40px;
+        z-index: 1;
+    }
+
+    .Back-card .Card-cvc{
+        position: absolute;
+        margin-top: 75px;
+        margin-left: 230px;
+        font-size: 12px;
+    }
+
+}

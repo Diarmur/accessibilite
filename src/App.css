@@ -36,3 +36,9 @@
     transform: rotate(360deg);
   }
 }
+
+@font-face {
+  font-family: "Space Grotesk";
+  src: local("SpaceGrotesk-VariableFont_wght"),
+    url("./assets/font/SpaceGrotesk-VariableFont_wght.ttf") format("truetype");
+}

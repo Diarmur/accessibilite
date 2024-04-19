@@ -2,7 +2,7 @@
 html {
   --light-violet: hsl(270, 3%, 87%);
   --dark-violet: hsl(279, 6%, 55%);
-  --very-violet: hsl(270, 9%, 17%);
+  --very-violet: hsl(270, 31%, 15%);
   --red-input: hsl(0, 100%, 66%);
   min-height: 100% !important;
     height: 100%;
@@ -27,10 +27,4 @@ body{
   font-family: "Space Grotesk";
   font-size: 18px;
   color: #909090e5;
-}
-
-@query screen and (max-width: 768px){
-  body{
-    height: 100vh;
-  }
 }

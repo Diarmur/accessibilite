@@ -122,6 +122,7 @@ label{
 
 .CVC .Middle-field:focus{
     outline-color: var(--very-violet);
+    
 }
 
 .CVC .Middle-field.active:focus{
@@ -142,14 +143,15 @@ button{
     cursor: pointer;
 }
 
+button:hover{
+    background-color: rgba(96,5,148,1);
+}
+
 input[type="text"]{
     font-family: "Space Grotesk";
     font-size: 18px;
     color: var(--very-violet);
-}
-
-input[type="text"]:focus{
-    outline-color: var(--very-violet);
+    
 }
 
 .Validation{
